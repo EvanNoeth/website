@@ -1,19 +1,19 @@
 body {
     font-family: arial, helvetica, sans-serif;
     font-size: 14px;
-    color: black;
+    color: rgb(255, 255, 255);
     background-color: #ffc;
     margin: 20px;
     padding: 0;
 }
 
 p {
-    line-height: 21px;
+    margin: 1px 5px 10px 20px;
 }
 
 h1 {
     color: #ffc;
-    background-color: #900;
+    background-color: purple;
     font-size: 2em;
     margin: 0;
     margin-bottom: 7px;
@@ -23,12 +23,13 @@ h1 {
     letter-spacing: 0.5em;
     border-bottom-style: solid;
     border-bottom-width: 0.5em;
-    border-bottom-color: #c00;
+    border-bottom-color: rgb(129, 0, 204);
+    box-shadow: 5px 5px 3px 1px #999;
 }
 
 h2 {
     color: white;
-    background-color: #090;
+    background-color: rgb(10, 0, 153);
     font-size: 1.5em;
     margin: 0; /*space outside something, has different variations like margin-right, margin-bottom etc.*/
     padding: 2px; /*same thing but space inside something*/
@@ -41,9 +42,10 @@ h3 {
 }
 
 img {
-    border-style: dashed;
+    border-style: solid;
     border-width: 2px;
     border-color: #ccc;
+    border-radius: 5px;
 }
 
 a {
@@ -56,10 +58,64 @@ strong { /*when text is bold, do this: */
 }
 
 li {
-    color: #900;
+    padding: 20px 10px;
+    color: rgb(153, 0, 140);
     font-style: italic;
+    text-shadow: -2px 2px 2px #a703bd;
 }
 
 table {
-    background-color: #ccc;
+    background-color: #5e5d5d;
+}
+
+a:link {
+    transition: all .5s linear 0;
+    color: blue;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:active {
+    color: red;
+}
+
+a:hover {
+    text-decoration: none;
+    color: blue;
+    background-color: yellow;
+}
+
+input:focus, textarea:focus {
+    background: #eee;
+}
+
+body {
+    background: black url(https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdzBmb2FwcmFzZ3NuNGR4ZHdwa2ZqdWJxZmV5ZTEyMjh4bjV0a2ZreSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/BwFWYaIbKgDL2/giphy.gif) no-repeat top right;
+    background-size: cover;
+}
+
+#navigation, #related_links { display: none }
+
+table, th, td {
+    border: 1px solid;
+    box-shadow: inset 0 0 2px 2px #ddd; /*adds an inside shadow*/
+}
+
+#navigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+}
+
+#content {
+    margin-left: 200px;
+}
+
+#people > li {
+    border: 1px solid white;
+    display: inline-block;
+    padding: 10px 5px;
 }
